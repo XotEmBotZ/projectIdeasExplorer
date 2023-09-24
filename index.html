@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIH project ideas duscussions</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="ideaCounter">
+        <span>
+
+            <span class="count" id="counter">25</span><span>/</span><span class="totalCount" id="totalCounts">150</span>
+        </span>
+        <div class="controls">
+            <span class="prev" id="prev"><span class="material-symbols-outlined">
+                    arrow_back_ios
+                </span></span>
+            <span class="next" id="next"><span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span></span>
+        </div>
+    </div>
+    <div class="idea">
+        <h1 class="problemTitle" id="problemTitle">Idea Title</h1>
+        <div class="problemDetailsShort">
+            <ul class="problemDetailsShortUl">
+                <li><span class="liName">ID: </span><span class="liDetails" id="problemId">ID</span></li>
+                <li><span class="liName">Technology Bucked: </span><span class="liDetails"
+                        id="problemTechnologyBucket"></span></li>
+                <li><span class="liName">Problem Creater's Organization: </span><span class="liDetails"
+                        id="problemOrganization"></span></li>
+                <li><span class="liName">Problem Creater's Department: </span><span class="liDetails"
+                        id="problemDepartment"></span></li>
+                <li><span class="liName">Category: </span><span class="liDetails" id="problemCategory"></span></li>
+            </ul>
+        </div>
+
+        <div class="problemDetails">
+            <p class="detail" id="problemDescription"></p>
+        </div>
+    </div>
+
+    <div class="userInputs">
+        <input type="number" name="acceptance" id="acceptance" placeholder="Acceptance">
+        <input type="text" name="suggestions" id="suggestions" placeholder="Suggestions">
+    </div>
+</body>
+
+</html>
