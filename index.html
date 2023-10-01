@@ -14,9 +14,17 @@
 <body>
     <div class="ideaCounter">
         <span>
-
             <span class="count" id="counter">25</span><span>/</span><span class="totalCount" id="totalCounts">150</span>
         </span>
+        <input type="search" name="search" id="search" placeholder="ID Search">
+        <div>
+            <span class="material-symbols-outlined" class="voting yes" id="yes">
+                check_circle
+            </span>
+            <span class="material-symbols-outlined" class="voting no" id="no">
+                do_not_disturb_on
+            </span>
+        </div>
         <div class="controls">
             <span class="prev" id="prev"><span class="material-symbols-outlined">
                     arrow_back_ios
@@ -27,6 +35,8 @@
         </div>
     </div>
     <div class="idea">
+        <span id="submitionCount"></span>
+        <span id="selected" class="dNone">SELECTED</span>
         <h1 class="problemTitle" id="problemTitle">Idea Title</h1>
         <div class="problemDetailsShort">
             <ul class="problemDetailsShortUl">
@@ -35,9 +45,9 @@
                         id="problemTechnologyBucket"></span></li>
                 <li><span class="liName">Problem Creater's Organization: </span><span class="liDetails"
                         id="problemOrganization"></span></li>
-                <li><span class="liName">Problem Creater's Department: </span><span class="liDetails"
-                        id="problemDepartment"></span></li>
                 <li><span class="liName">Category: </span><span class="liDetails" id="problemCategory"></span></li>
+                <li><span class="liName">Youtube Link: </span><span class="liDetails" id="ytLink"></span></li>
+                <li><span class="liName">Dataset Link: </span><span class="liDetails" id="datasetLink"></span></li>
             </ul>
         </div>
 
