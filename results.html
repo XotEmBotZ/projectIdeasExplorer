@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid;
+            padding: 1rem;
+        }
+    </style>
+    <script defer>
+        let titles={"SIH1313":"A system of IoT Devices to prevent under-loading \/ overloading of Railway wagons.","SIH1315":"Development of a Telematic control unit for capturing vital data of\na vehicle without using company fitted telemetry data port.","SIH1325":"AI Assisted Tele-medicine KIOSK for Rural India","SIH1329":"360-degree feedback software for the Government of India related News Stories in Regional\nMedia using Artificial Intelligence \/ Machine Learning","SIH1333":"Udyog Saarthi App - (Progressive Web-based Application) for\nAdults undergoing Job coaching for opportunities under 4% reservation in NIEPMD and other\nInstitutions.","SIH1340":"Application for Assessment of Quality of Textbook\/ Reference Books\/ E-\nBook","SIH1345":"Startup-AYUSH Portal","SIH1352":"Traditional agriculture practices lack real-time monitoring and efficient operation on fields This leads to inefficiencies and low production levels.","SIH1356":"Sentiment Analysis of Incoming calls on helpdesk","SIH1357":"Sentiment analysis of Social Media presence","SIH1361":"Development of Small Scale Wind energy device","SIH1362":"Student dropout analysis for school education","SIH1363":"Self-identifying the mental health status and get guidance for\nsupport.","SIH1365":"Online Blockchain based certificate generation and validation\nsystem for government organization.","SIH1368":"Despite prohibition of hazardous cleaning of sewers and septic tanks (manual\ncleaningof sewers and septic tanks without safety kits, safety devices and\nwithout adherence tosafety precautions) it is still being resorted to in many\nparts of the country.","SIH1371":"Community Based Reporting and Monitoring Tool for Women's Safety in Colleges\/Universities.","SIH1372":"development of systems for effective Environmental, Social and Governance (ESG) Intervention in Higher Education","SIH1376":"Robotics for inspection of abrasion \/ corrosion of\nunderwater equipment \/ parts and further repair and maintainance","SIH1377":"Creation of Live Digital Twins for the power\nProjects and integration with all existing\nmonitoring and database system which will give a\nholistic real time approach to the project and plant\nfrom all aspect of construction, operation and\nmaintenance.","SIH1380":"lntelligent chatbot to answer queries pertaining to various Maintenance\nProcesses within Substation","SIH1382":"Real-Time Vehicle Tracking system.","SIH1383":"Optimizing Doctor Availability and Appointment Allocation in Hospitals through Digital Technology and Al Integration.","SIH1387":"Detection of embedded Malware\/ Trojan in hardware devices\nused in Power Sector.","SIH1389":"To develop centralised information security .Log-collection\nfacility' or 'security operation centre (soc)' in the power sector, considering cEA\ncybersecurity (Power sector) Guidelines, 2021to keep lr and or networking System isolated\nand air-gapped.","SIH1395":"IoT based sensors can be used to determine the Machine Runtime","SIH1398":"lntegration and Utilization of data-based being maintained by various Ministries\/Departments for better utilization of raw materials and production capacity.","SIH1399":"Development of Technology for manufacturing of mind control BIONIC hand with a sense of touch","SIH1404":"Low-cost Myoelectric Prosthetic Arm","SIH1406":"Development of Augmentative and Alternative Communication (AAC) in Indian context","SIH1412":"Data Compression for backbone network","SIH1413":"Dak Ghar Niryat Kendra","SIH1415":"Development of motion amplification video techniques\nfor vibration analysis","SIH1416":"AI based Automatic alarm generation and dropping of\npayload at a particular object through a Drone.","SIH1418":"Deep learning for terrain recognition","SIH1419":"Robust human target detection and acquisition","SIH1421":"Novel Technologies for Early Detection and Mitigation of\nAvalanches","SIH1422":"Devise the method for identification of victims buried under\navalanches.","SIH1424":"Call for low-cost desalination technology for Lakshadweep and Inland saline water sources.","SIH1429":"Develop a solution to identifo discrepancies in Quality Monitoring Data on OMMAS and generate reports that highlight areas where\ncorrective action is Required.","SIH1431":"Online personalized learning remediation\/tutoring tool. Search for best teacher for specific topics.","SIH1433":"Mental health and well-being surveillance, assessment and\ntracking solution among children.","SIH1437":"Development of suitable Software and Hardware components\/sensors for springshed mapping, monitoring and management.","SIH1439":"Robotics Device for Borewell Rescue Operation","SIH1440":"An application under which all rescue agencies are registered and which can display the location of other rescue relief agencies during natural\/ man made calamities","SIH1445":"De-anonymisation for monitoring and tracking of illegal\nactivities performed using cryptocurrency transaction technology","SIH1446":"Developing a GUI based hardening script for Ubuntu\noperating system with flexibility to cater for organisational security policies","SIH1447":"Identification and Extraction of Forward Error Correction\n(FEC) schemes of unknown demodulated signals","SIH1448":"Design of RF Up\/Down-converter for signals using GNU Radio\nand SDRs.","SIH1449":"Design, develop and implement a software bill of materials (SBOM) generation tool that can generate the complete SBOM of custom-developed software (including in-house developments by organisations)","SIH1450":"Develop and deploy a Large Language Model (LLM) based tool for generating human like responses to natural language inputs for network not connected over internet","SIH1452":"Develop Ransomware Readiness Assessment tool.","SIH1453":"Investigation of vulnerabilities in implementation of crypto library used by OpenVPN for Internet Protocol Security (IPsec), IPV6 deployment.","SIH1455":"Efficient enumeration of URLs of active hidden servers over\nanonymous channel (TOR)","SIH1457":"Get Fit Faster with a High-Tech Tracker: Analyze Human Activity and GPS Data for Improved Results","SIH1458":"AI Based - Designing of Assistive portal for Stakeholders in Approval Process","SIH1459":"Integration of Multiple Data-bases of AICTE in order to fetch Coherent Information","SIH1460":"Integration of AI for Adaptive Learning for MCQ Selection in PARAKH","SIH1463":"Establishing a Server log system for E-governance with appropriate notification and content based classification of log AICTE","SIH1465":"A unified portal for developing a model Curriculum for all the AICTE Approved Institutes","SIH1466":"Student Innovation","SIH1467":"Student Innovation","SIH1471":"Student Innovation","SIH1472":"Student Innovation","SIH1473":"Student Innovation","SIH1475":"Student Innovation","SIH1477":"Student Innovation","SIH1485":"Student Innovation","SIH1489":"Student Innovation","SIH1498":"Develop a Proctored exam tool for shortlisting the candidates for the national and international level hackathons.","SIH1502":"Blended Learning to overcome inadequate infrastructure","SIH1505":"Aerial Location of Hazardous Atmosphere in Industries","SIH1509":"App-Based Solution to provide market access to micro and small enterprises","SIH1510":"Land profiling of Asset Creation process","SIH1511":"Real time Knowledge of ore body being mined out","SIH1512":"Centralized Monitoring System for Street Light\nFault Detection and Location Tracking","SIH1516":"Suggest an Al-based solution to enable ease of grievance lodging and tracking for\ncitizens across multiple departments"}
+        var obj = JSON.parse(localStorage.getItem("votingData"))
+        let voters = parseInt(localStorage.getItem("numberOfVoters"))
+        for (v in obj){
+            obj[v]/=voters
+        }
+        // Function to create table
+        function createTableFromObj(obj) {
+            var table = document.createElement('table');
+            var tableBody = document.createElement('tbody');
+            Object.entries(obj).forEach(function ([key, value]) {
+                var row = document.createElement('tr');
+                var cell = document.createElement('td');
+                cell.appendChild(document.createTextNode(titles[key]));
+                [key, value].forEach(function (cellData) {
+                    var cell = document.createElement('td');
+                    cell.appendChild(document.createTextNode(cellData));
+                    row.appendChild(cell);
+                });
+                row.appendChild(cell);
+                
+                tableBody.appendChild(row);
+            });
+
+            table.appendChild(tableBody);
+            document.getElementById("d").appendChild(table);
+        }
+
+        // Call the function
+    </script>
+</head>
+
+<body>
+    <div id="d"></div>
+    <script>
+
+        createTableFromObj(obj);
+    </script>
+</body>
+
+</html>

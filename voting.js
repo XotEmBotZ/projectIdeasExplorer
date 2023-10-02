@@ -44,7 +44,7 @@ votedList = new Set(votedList)
 
 let voteYesBtn = document.getElementById("yes")
 voteYesBtn.addEventListener("click", event => {
-    voters=localStorage.setItem("numberOfVoters",localStorage.getItem("numberOfVoters")+1)
+    voters=localStorage.setItem("numberOfVoters",parseInt(localStorage.getItem("numberOfVoters"))+1)
     if (!localStorage.getItem("votingData")){
         localStorage.setItem("votingData",JSON.stringify({}))
     }
